@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 - ICT12267</title>
+    <style>
+        /* 1. ตั้งค่าภาพพื้นหลังตามโจทย์ */
+        body {
+            /* เปลี่ยนลิงก์รูปพื้นหลังด้านล่างนี้เป็นรูปที่คุณต้องการ */
+            background-image: url('https://images.unsplash.com/photo-1534088568595-a066f410cbda?q=80&w=2000&auto=format&fit=crop');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+
+            /* จัดระเบียบหน้าเว็บให้อยู่ตรงกลาง */
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* 2. โค้ดสำหรับจัดข้อความให้อยู่กึ่งกลางตามโจทย์ */
+        .center-text {
+            text-align: center;
+        }
+
+        /* 3. โค้ดสำหรับตกแต่งหัวข้อ h1 ตามโจทย์ */
+        h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            /* ใช้สีขาวเพื่อให้ตัดกับพื้นหลัง หรือเปลี่ยนได้ตามชอบ */
+            margin-bottom: 40px;
+        }
+
+        /* ส่วนเสริม (AI ช่วยตกแต่ง): จัดการการแสดงผลรูปภาพให้เป็นแนวนอนสวยๆ แบบในตัวอย่าง */
+        .gallery-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .gallery-container img {
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 15px;
+            /* ทำขอบรูปให้โค้งมน */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+            /* ใส่เงาให้รูปภาพโดดเด่น */
+            transition: transform 0.3s ease;
+            /* เอฟเฟกต์ตอนชี้เมาส์ */
+        }
+
+        /* เพิ่มลูกเล่นเมื่อเอาเมาส์ไปชี้ที่รูป รูปจะขยายขึ้นนิดนึง */
+        .gallery-container img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="center-text">
+        <h1>68109757 teemathad imsuchart</h1>
+    </div>
+
+    <div class="gallery-container">
+        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=600&auto=format&fit=crop"
+            alt="Image 1">
+        <img src="https://images.unsplash.com/photo-1542314831-c6a4d142481f?q=80&w=600&auto=format&fit=crop"
+            alt="Image 2">
+        <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=600&auto=format&fit=crop"
+            alt="Image 3">
+    </div>
+
+</body>
+
+</html>
